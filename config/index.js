@@ -3,6 +3,7 @@
 const devEnv = require('./dev.env')
 // 获取接口地址
 const base_url = devEnv.BASE_API.replace(/"/g,'')
+const admin_url = devEnv.admin_url.replace(/"/g,'')
 const path = require('path')
 module.exports = {
   dev: {
@@ -28,12 +29,21 @@ module.exports = {
         pathRewrite: {
           '^/api': 'api'
         }
+      },
+      '/adam': {
+        // 测试环境
+        target: admin_url,
+        secure: false,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/adam': 'adam'
+        }
       }
     },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8013, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 7000, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: false,
