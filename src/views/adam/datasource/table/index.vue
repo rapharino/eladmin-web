@@ -23,8 +23,7 @@
 
       <el-table-column label="操作" width="150px" align="center">
         <template slot-scope="scope">
-          <generator :name="scope.row.tableName"/>
-          <!--<el-button size="mini" type="primary" @click="edit(scope.row)">代码生成</el-button>-->
+          <generator :name="scope.row.name"/>
         </template>
       </el-table-column>
     </el-table>
@@ -62,7 +61,7 @@
     methods: {
       parseTime,
       beforeInit() {
-        this.url = 'api/metadata/datasource/'+this.$route.query.datasource
+        this.url = 'adam/api/metadata/datasource/'+this.$route.query.datasource
         const sort = 'id,desc'
         this.params = { page: this.page, size: this.size, sort: sort }
         return true

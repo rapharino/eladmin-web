@@ -30,13 +30,13 @@ module.exports = {
           '^/api': 'api'
         }
       },
-      '/adam': {
+      '/adam/api': {
         // 测试环境
         target: admin_url,
         secure: false,
         changeOrigin: true,
         pathRewrite: {
-          '^/adam': 'adam'
+          '^/adam/api': 'adam/api'
         }
       }
     },

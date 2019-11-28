@@ -114,7 +114,7 @@ export default {
     table(data) {
       console.log(data)
       this.$router.push({
-        path: '/system/datasource/table',
+        path: '/adam/datasource/table',
         query: {
           datasource: data.id
         }

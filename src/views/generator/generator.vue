@@ -140,6 +140,11 @@ export default {
       this.$refs['form'].validate((valid) => {
         if (valid) {
           update(this.form).then(res => {
+
+            // console.log(this.form)
+            // console.log(this.data)
+            // console.log(this.name)
+
             generator(this.data, this.name).then(res => {
               this.$notify({
                 title: '生成成功',
