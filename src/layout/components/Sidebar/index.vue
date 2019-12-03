@@ -6,7 +6,7 @@
       :collapse="isCollapse"
       :unique-opened="$store.state.settings.uniqueOpened"
       mode="vertical"
-      background-color="#304156"
+      background-color="#20222a"
       text-color="#bfcbd9"
       active-text-color="#409EFF"
     >

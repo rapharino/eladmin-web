@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-family: Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 
 .el-dialog__body {
@@ -91,7 +91,10 @@ a:hover {
 }
 
 .app-container {
-  padding: 20px;
+  padding: 24px;
+  background: #ffffff;
+  margin: 8px;
+  border-radius: 6px;
 }
 
 .head-container {

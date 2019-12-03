@@ -196,7 +196,7 @@ export default {
 
 <style rel="stylesheet/scss" lang="scss" scoped>
 .tags-view-container {
-  height: 34px;
+  height: 45px;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #d8dce5;
@@ -206,13 +206,13 @@ export default {
       display: inline-block;
       position: relative;
       cursor: pointer;
-      height: 26px;
-      line-height: 26px;
-      border: 1px solid #d8dce5;
-      color: #495060;
+      height: 40px;
+      line-height: 40px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #ccc;
       background: #fff;
-      padding: 0 8px;
-      font-size: 12px;
+      padding: 0 15px;
       margin-left: 5px;
       margin-top: 4px;
       &:first-of-type {
@@ -222,18 +222,16 @@ export default {
         margin-right: 15px;
       }
       &.active {
-        background-color: #42b983;
-        color: #fff;
-        border-color: #42b983;
+        color: #409eff;
+        border-bottom: 3px solid #409eff;
         &::before {
           content: '';
           background: #fff;
-          display: inline-block;
           width: 8px;
           height: 8px;
           border-radius: 50%;
           position: relative;
-          margin-right: 2px;
+          /*margin-right: 2px;*/
         }
       }
     }
@@ -267,9 +265,8 @@ export default {
 .tags-view-wrapper {
   .tags-view-item {
     .el-icon-close {
-      width: 16px;
-      height: 16px;
-      vertical-align: 2px;
+      width: 3px;
+      font-size: 20px;
       border-radius: 50%;
       text-align: center;
       transition: all .3s cubic-bezier(.645, .045, .355, 1);
@@ -277,11 +274,12 @@ export default {
       &:before {
         transform: scale(.6);
         display: inline-block;
-        vertical-align: -3px;
+        vertical-align: -4px;
       }
       &:hover {
-        background-color: #b4bccc;
-        color: #fff;
+        font-size: 24px;
+        color: #f56c6d;
+        font-weight: 900;
       }
     }
   }
